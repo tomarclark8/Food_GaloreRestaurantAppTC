@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="restaurant name"
+        android:translationY="0sp"
+        android:translationX="10sp"
+        android:textSize="50sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hours open"
+        android:translationY="100sp"
+        android:translationX="-80sp"
+        android:textSize="30sp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservations"
+        android:translationY="600sp"
+        android:translationX="30sp"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:translationX="-220sp"
+        android:translationY="600sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="Front building image"
+        android:translationX="-200sp"
+        android:translationY="300sp"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+
+
+
+
+</LinearLayout>
