@@ -11,8 +11,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="restaurant name"
-        android:textSize="50sp"
+        android:text="Panacake House"
+        android:textSize="53sp"
+        android:textAppearance="bold"
         android:translationX="10sp"
         android:translationY="0sp" />
 
@@ -20,37 +21,38 @@
         android:id="@+id/Hours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hours open"
-        android:textSize="30sp"
-        android:translationX="100sp"
-        android:translationY="100sp" />
+        android:text="Open: 12am-12pm \nClosed: 1pm-11pm"
+        android:textAppearance="bold"
+        android:textSize="40sp"
+        android:translationX="10sp"
+        android:translationY="10sp" />
 
     <Button
         android:id="@+id/Reserve"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reservations"
-        android:translationX="100sp"
-        android:translationY="600sp"
-
-        />
+        android:textSize="40sp"
+        android:translationX="60sp"
+        android:translationY="450sp" />
 
     <Button
         android:id="@+id/Menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Menu"
-        android:translationX="150sp"
-        android:translationY="500sp" />
+        android:textSize="40sp"
+        android:translationX="130sp"
+        android:translationY="300sp" />
 
     <ImageView
         android:id="@+id/imgv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="Front building image"
-        android:translationX="200sp"
-        android:translationY="200sp"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        android:translationX="2sp"
+        android:translationY="-170sp"
+        app:srcCompat="@drawable/panacake_house" />
 
 
 </LinearLayout>
