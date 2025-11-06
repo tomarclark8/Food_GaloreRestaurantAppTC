@@ -12,94 +12,109 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:id="@+id/Onemeal"
-        android:text="Meal 1"
-        android:textSize="50sp"
-
-        />
+        android:text="Classic Panacake"
+        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_notification_overlay" />
+        android:layout_width="149dp"
+        android:layout_height="123dp"
+        app:srcCompat="@drawable/classic_panacake" />
 
 
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:id="@+id/Twomeal"
-        android:text="Meal 2"
-        android:textSize="50sp"
-
-        />
+        android:text="Chocolate Panacake"
+        android:textSize="20sp"
+        android:translationX="200sp"
+        android:translationY="-150sp" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_notification_overlay" />
+        android:layout_width="142dp"
+        android:layout_height="127dp"
+        android:translationX="220sp"
+        android:translationY="-150sp"
+        app:srcCompat="@drawable/choc_panacake" />
 
 
     <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
         android:id="@+id/Threemeal"
-        android:text="Meal 3"
-        android:textSize="50sp"
-
-        />
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:text="Breakfast Hashbrown Bowls"
+        android:textSize="20sp"
+        android:translationX="10sp"
+        android:translationY="-70sp" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_notification_overlay" />
+        android:layout_width="142dp"
+        android:layout_height="122dp"
+        android:translationX="0sp"
+        android:translationY="-70sp"
+        app:srcCompat="@drawable/waffle_house_sausage_hashbrown_bowl_pin_2" />
 
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:id="@+id/Fourmeal"
-        android:text="Meal 4"
-        android:textSize="50sp"
-
-        />
+        android:text="BLT"
+        android:textSize="20sp"
+        android:translationX="260sp"
+        android:translationY="-250sp" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_notification_overlay" />
+        android:layout_width="140dp"
+        android:layout_height="116dp"
+        android:translationX="220sp"
+        android:translationY="-220sp"
+        app:srcCompat="@drawable/blt_for_recipe_1_6_1200x675" />
 
 
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:id="@+id/Fivemeal"
-        android:text="Meal 5"
-        android:textSize="50sp"
-
-        />
+        android:text="New York Strip Steak"
+        android:textSize="20sp"
+        android:translationX="0sp"
+        android:translationY="-150sp" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_notification_overlay" />
+        android:layout_width="143dp"
+        android:layout_height="126dp"
+        android:translationY="-150sp"
+        app:srcCompat="@drawable/ny_strip_w_peppercorn_sauce_11" />
 
 
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:id="@+id/Sixmeal"
-        android:text="Meal 6"
-        android:textSize="50sp"
-
-        />
+        android:text="Hamburger"
+        android:textSize="20sp"
+        android:translationX="260sp"
+        android:translationY="-300sp" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_notification_overlay" />
+        android:layout_width="154dp"
+        android:layout_height="133dp"
+        android:translationX="220sp"
+        android:translationY="-300sp"
+        app:srcCompat="@drawable/burger" />
 
+    <Button
+        android:id="@+id/backbtm"
+        android:layout_width="wrap_content"
+        android:layout_height="90sp"
+        android:text="BACK"
+        android:textSize="50sp"
+        android:translationX="110sp"
+        android:translationY="-200sp" />
 </LinearLayout>
