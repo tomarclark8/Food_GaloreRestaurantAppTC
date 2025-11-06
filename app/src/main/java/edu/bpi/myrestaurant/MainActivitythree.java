@@ -25,7 +25,7 @@ public class MainActivitythree extends AppCompatActivity {
 
         back = (Button) findViewById(R.id.back);
 
-        backbtm.setOnClickListener(new View.OnClickListener() {
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(MainActivitythree.this, MainActivity.class);
