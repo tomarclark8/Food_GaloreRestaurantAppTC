@@ -9,20 +9,21 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Panacake House"
         android:textSize="53sp"
-        android:textAppearance="bold"
+
         android:translationX="10sp"
         android:translationY="0sp" />
 
     <TextView
-        android:id="@+id/Hours"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Open: 12am-12pm \nClosed: 1pm-11pm"
-        android:textAppearance="bold"
+
         android:textSize="40sp"
         android:translationX="10sp"
         android:translationY="10sp" />
@@ -51,7 +52,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="Front building image"
         android:translationX="2sp"
-        android:translationY="-170sp"
+        android:translationY="-220sp"
         app:srcCompat="@drawable/panacake_house" />
 
 
