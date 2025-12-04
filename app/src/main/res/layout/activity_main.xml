@@ -8,6 +8,19 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Address"
+        android:id="@+id/Address"
+        android:translationX="120sp"
+        android:translationY="765sp"
+        android:backgroundTint="#FFFF"
+        android:textColor="#4B4A4A"
+
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

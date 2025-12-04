@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivitythree extends AppCompatActivity {
 
     //this is the menu page
-    Button back;
+    Button Back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +23,9 @@ public class MainActivitythree extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        back = (Button) findViewById(R.id.back);
+        Back = (Button) findViewById(R.id.back);
 
-        back.setOnClickListener(new View.OnClickListener() {
+        Back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(MainActivitythree.this, MainActivity.class);
