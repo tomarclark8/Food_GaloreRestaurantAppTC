@@ -20,7 +20,7 @@ public class Menu extends AppCompatActivity {
     Button fiveAdd;
     Button sixAdd;
 
-    Intent orders = new Intent();
+    Intent ordersplaced = new Intent();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,8 +48,8 @@ public class Menu extends AppCompatActivity {
         oneAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                orders = new Intent(Menu.this, OrdersPlaced.class);
-                startActivity(orders);
+                Intent orders = ordersplaced.putExtra("CP1", 8);
+                        startActivity(orders);
 
             }
         });
@@ -57,8 +57,9 @@ public class Menu extends AppCompatActivity {
         twoAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                orders = new Intent(Menu.this, OrdersPlaced.class);
+                Intent orders = ordersplaced.putExtra("CP2", 10);
                 startActivity(orders);
+
 
             }
         });
@@ -66,8 +67,9 @@ public class Menu extends AppCompatActivity {
         threeAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                orders = new Intent(Menu.this, OrdersPlaced.class);
+                Intent orders = ordersplaced.putExtra("BHB", 8);
                 startActivity(orders);
+
 
             }
         });
@@ -75,8 +77,9 @@ public class Menu extends AppCompatActivity {
         fourAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                orders = new Intent(Menu.this, OrdersPlaced.class);
+                Intent orders = ordersplaced.putExtra("BLT", 12);
                 startActivity(orders);
+
 
             }
         });
@@ -84,8 +87,9 @@ public class Menu extends AppCompatActivity {
         fiveAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                orders = new Intent(Menu.this, OrdersPlaced.class);
+                Intent orders = ordersplaced.putExtra("NYSS", 18);
                 startActivity(orders);
+
 
             }
         });
@@ -93,8 +97,9 @@ public class Menu extends AppCompatActivity {
         sixAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                orders = new Intent(Menu.this, OrdersPlaced.class);
+                Intent orders = ordersplaced.putExtra("HB", 20);
                 startActivity(orders);
+
 
             }
         });
