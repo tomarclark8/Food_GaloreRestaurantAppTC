@@ -15,13 +15,13 @@
             android:name=".OrdersPlaced"
             android:exported="false" />
         <activity
-            android:name=".MainActivitythree"
+            android:name=".Menu"
             android:exported="false" />
         <activity
-            android:name=".MainActivitytwo"
+            android:name=".Reservation"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
