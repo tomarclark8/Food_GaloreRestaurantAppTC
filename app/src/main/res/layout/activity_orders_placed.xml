@@ -16,12 +16,14 @@
         />
 
     <TextView
+        android:id="@+id/f1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CP1: #x"
         android:textSize="50sp"
         />
     <TextView
+        android:id="@+id/f2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CP2: #x"
@@ -29,24 +31,28 @@
         />
 
     <TextView
+        android:id="@+id/f3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BHB: #x"
         android:textSize="50sp"
         />
     <TextView
+        android:id="@+id/f4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BLT: #x"
         android:textSize="50sp"
         />
     <TextView
+        android:id="@+id/f5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NYSS: #x"
         android:textSize="50sp"
         />
     <TextView
+        android:id="@+id/f6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HB: #x"
