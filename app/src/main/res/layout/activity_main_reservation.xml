@@ -29,8 +29,7 @@
         android:textSize="50sp"
         android:translationX="110sp"
         android:translationY="700sp"
-        android:id="@+id/backbtr"
-
+        android:id="@+id/rback"
         />
 
 </LinearLayout>
