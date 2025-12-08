@@ -30,7 +30,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Uri location = Uri.parse("geo:0,0?q=1400+W+Cold+Spring+Ln,+Baltimore,+Maryland"); // z param is zoom level
-
+                Address.setText("Address: 1400W Cold Spring Ln");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
                 startActivity(mapIntent);
             }
