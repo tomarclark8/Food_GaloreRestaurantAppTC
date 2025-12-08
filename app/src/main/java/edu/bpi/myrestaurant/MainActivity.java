@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
     //tThis is the home page
     Button reserve;
     Button menu;
-
     Button Address;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
