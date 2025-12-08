@@ -12,10 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:text="Address"
+        android:text="Address: 1400W Cold Spring Ln"
         android:id="@+id/Address"
-        android:translationX="120sp"
-        android:translationY="765sp"
+        android:translationX="40sp"
+        android:translationY="775sp"
         android:backgroundTint="#FFFF"
         android:textColor="#4B4A4A"
 
