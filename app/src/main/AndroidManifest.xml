@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyRestaurant">
         <activity
+            android:name=".OrdersPlaced"
+            android:exported="false" />
+        <activity
             android:name=".MainActivitythree"
             android:exported="false" />
         <activity

@@ -8,18 +8,29 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Address"
+        android:id="@+id/Address"
+        android:translationX="120sp"
+        android:translationY="765sp"
+        android:backgroundTint="#FFFF"
+        android:textColor="#4B4A4A"
+
+        />
+
     <TextView
-        android:id="@+id/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Panacake House"
         android:textSize="53sp"
-
         android:translationX="10sp"
         android:translationY="0sp" />
 
     <TextView
-
+        android:id="@+id/Hours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Open: 12am-12pm \nClosed: 1pm-11pm"
@@ -52,7 +63,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="Front building image"
         android:translationX="2sp"
-        android:translationY="-220sp"
+        android:translationY="-170sp"
         app:srcCompat="@drawable/panacake_house" />
 
 
