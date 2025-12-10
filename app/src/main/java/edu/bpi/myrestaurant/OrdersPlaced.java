@@ -50,6 +50,7 @@ public class OrdersPlaced extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(OrdersPlaced.this, Menu.class);
+                //putExtra for saved data between intents
                 intent.putExtra("CP1", f1Value);
                 intent.putExtra("CP2", f2Value);
                 intent.putExtra("BHB", f3Value);
@@ -65,6 +66,7 @@ public class OrdersPlaced extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(OrdersPlaced.this, Purchase.class);
+                //putExtra for saved data between intents
                 intent.putExtra("CP1", f1Value);
                 intent.putExtra("CP2", f2Value);
                 intent.putExtra("BHB", f3Value);
@@ -77,13 +79,12 @@ public class OrdersPlaced extends AppCompatActivity {
         });
 
         Intent getQuantity = getIntent();
-
-        f1Value = getQuantity.getIntExtra("CP1", 0);
-        f2Value = getQuantity.getIntExtra("CP2", 0);
-        f3Value = getQuantity.getIntExtra("BHB", 0);
-        f4Value = getQuantity.getIntExtra("BLT", 0);
-        f5Value = getQuantity.getIntExtra("NYSS", 0);
-        f6Value = getQuantity.getIntExtra("HB", 0);
+        f1Value = getQuantity.getIntExtra("CP1", 0);//cost $12.99
+        f2Value = getQuantity.getIntExtra("CP2", 0);//cost $15.50
+        f3Value = getQuantity.getIntExtra("BHB", 0);//cost $18.75
+        f4Value = getQuantity.getIntExtra("BLT", 0);//cost $9.99
+        f5Value = getQuantity.getIntExtra("NYSS", 0);//cost $22.50
+        f6Value = getQuantity.getIntExtra("HB", 0);//cost $14.50
 
         //Sets Quantity of food
         f1.setText("CP1: "+f1Value+"x");

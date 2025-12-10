@@ -11,32 +11,43 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Checkout"
+        android:text="CHECKOUT"
         android:textSize="50sp"
-        android:translationX="100sp"
+        android:translationX="80sp"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SUBTOTAL"
+        android:text="SUBTOTAL: $0"
         android:textSize="50sp"
+        android:translationY="70sp"
         android:id="@+id/subtotal"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TOTAL"
+        android:text="TOTAL: $0"
         android:textSize="50sp"
+        android:translationY="150sp"
         android:id="@+id/total"
         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See total"
+        android:textSize="50sp"
+        android:translationX="80sp"
+        android:translationY="250sp"
+        android:id="@+id/totalbutton" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BACK OUT"
         android:textSize="50sp"
         android:translationX="60sp"
-        android:translationY="450sp"
+        android:translationY="350sp"
         android:id="@+id/Pback" />
     <Button
         android:layout_width="wrap_content"
@@ -44,7 +55,7 @@
         android:text="CONFIRM"
         android:textSize="50sp"
         android:translationX="70sp"
-        android:translationY="460sp"
+        android:translationY="390sp"
         android:id="@+id/CONFIRM" />
 
 </LinearLayout>
