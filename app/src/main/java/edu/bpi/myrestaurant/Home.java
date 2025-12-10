@@ -33,10 +33,11 @@ public class Home extends AppCompatActivity {
         menu = (Button) findViewById(R.id.Menu);
         Address = (Button) findViewById(R.id.Address);
 
+
         Address.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri location = Uri.parse("geo:0,0?q=1400+W+Cold+Spring+Ln,+Baltimore,+Maryland"); // z param is zoom level
+                Uri location = Uri.parse("geo:39.28179,-76.58154?q=The+Original+Pancake+House,+2400+Boston+St,+Baltimore,+Maryland"); // z param is zoom level
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
                 startActivity(mapIntent);
             }

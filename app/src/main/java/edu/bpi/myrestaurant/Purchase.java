@@ -80,7 +80,7 @@ public class Purchase extends AppCompatActivity {
         subtotal += (f4Value * BLT);
         subtotal += (f5Value * NYSS);
         subtotal += (f6Value * HB);
-        Subtotal.setText("Subtotal: $"+ subtotal);
+        Subtotal.setText("Subtotal: $"+ roundedSubtotal);
 
         //Show total value
             //Sales tax of %6
@@ -99,7 +99,7 @@ public class Purchase extends AppCompatActivity {
         Confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(Purchase.this, Home.class);
+                Intent intent = new Intent(Purchase.this, Confirmation.class);
                 //putExtra for saved data between intents
                 intent.putExtra("CP1", f1Value);
                 intent.putExtra("CP2", f2Value);
