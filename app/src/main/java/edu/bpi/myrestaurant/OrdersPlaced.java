@@ -65,6 +65,12 @@ public class OrdersPlaced extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(OrdersPlaced.this, Purchase.class);
+                intent.putExtra("CP1", f1Value);
+                intent.putExtra("CP2", f2Value);
+                intent.putExtra("BHB", f3Value);
+                intent.putExtra("BLT", f4Value);
+                intent.putExtra("NYSS", f5Value);
+                intent.putExtra("HB", f6Value);
                 startActivity(intent);
 
             }
