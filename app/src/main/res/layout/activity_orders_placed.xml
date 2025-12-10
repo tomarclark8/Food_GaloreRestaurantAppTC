@@ -8,6 +8,8 @@
     android:layout_height="match_parent"
     tools:context=".OrdersPlaced">
 
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,6 +60,24 @@
         android:text="HB: #x"
         android:textSize="50sp"
         />
+
+    <Button
+        android:id="@+id/opback"
+        android:layout_width="wrap_content"
+        android:layout_height="90sp"
+            android:text="BACK"
+            android:textSize="50sp"
+        android:translationX="120sp"
+        android:translationY="80sp" />
+
+    <Button
+        android:id="@+id/purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="90sp"
+            android:text="PURCHASE"
+            android:textSize="50sp"
+        android:translationX="50sp"
+        android:translationY="100sp" />
 
 
 </LinearLayout>

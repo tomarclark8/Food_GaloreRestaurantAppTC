@@ -3,6 +3,7 @@ package edu.bpi.myrestaurant;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -25,9 +26,10 @@ public class OrdersPlaced extends AppCompatActivity {
     TextView f6;
     private int f6Value;
 
+    Button Back;
+    Button Purchase;
 
 
-    Intent getOrders = new Intent();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,8 @@ public class OrdersPlaced extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_orders_placed);
 
+        Back = (Button) findViewById(R.id.opback);
+        Purchase = (Button) findViewById(R.id.purchase);
         f1 = (TextView) findViewById(R.id.f1);
         f2 = (TextView) findViewById(R.id.f2);
         f3 = (TextView) findViewById(R.id.f3);
@@ -42,56 +46,46 @@ public class OrdersPlaced extends AppCompatActivity {
         f5 = (TextView) findViewById(R.id.f5);
         f6 = (TextView) findViewById(R.id.f6);
 
-        f1Value = getOrders.getIntExtra("CP1", 1);
-        f2Value = getOrders.getIntExtra("CP2", 1);
-        f3Value = getOrders.getIntExtra("BHB", 1);
-        f4Value = getOrders.getIntExtra("BLT", 1);
-        f5Value = getOrders.getIntExtra("NYSS", 1);
-        f6Value = getOrders.getIntExtra("HB", 1);
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(OrdersPlaced.this, Menu.class);
+                intent.putExtra("CP1", f1Value);
+                intent.putExtra("CP2", f2Value);
+                intent.putExtra("BHB", f3Value);
+                intent.putExtra("BLT", f4Value);
+                intent.putExtra("NYSS", f5Value);
+                intent.putExtra("HB", f6Value);
+                startActivity(intent);
 
-        f1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                //Sets Quantity of food
-                 f1.setText("CP1: "+f1Value+"x");
-            }
-        });
-        f2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                //Sets Quantity of food
-                f1.setText("CP2: "+f2Value+"x");
-            }
-        });
-        f3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                //Sets Quantity of food
-                f1.setText("BHB: "+f3Value+"x");
-            }
-        });
-        f4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                //Sets Quantity of food
-                f1.setText("BLT: "+f4Value+"x");
-            }
-        });
-        f5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                //Sets Quantity of food
-                f1.setText("NYSS: "+f5Value+"x");
-            }
-        });
-        f6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                //Sets Quantity of food
-                f1.setText("HB: "+f6Value+"x");
             }
         });
 
+        Purchase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(OrdersPlaced.this, Purchase.class);
+                startActivity(intent);
+
+            }
+        });
+
+        Intent getQuantity = getIntent();
+
+        f1Value = getQuantity.getIntExtra("CP1", 0);
+        f2Value = getQuantity.getIntExtra("CP2", 0);
+        f3Value = getQuantity.getIntExtra("BHB", 0);
+        f4Value = getQuantity.getIntExtra("BLT", 0);
+        f5Value = getQuantity.getIntExtra("NYSS", 0);
+        f6Value = getQuantity.getIntExtra("HB", 0);
+
+        //Sets Quantity of food
+        f1.setText("CP1: "+f1Value+"x");
+        f2.setText("CP2: "+f2Value+"x");
+        f3.setText("BHB: "+f3Value+"x");
+        f4.setText("BLT: "+f4Value+"x");
+        f5.setText("NYSS: "+f5Value+"x");
+        f6.setText("HB: "+f6Value+"x");
 
     }
 }

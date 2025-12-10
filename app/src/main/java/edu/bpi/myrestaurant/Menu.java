@@ -13,13 +13,19 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Menu extends AppCompatActivity {
 
     //this is the menu page
-    Button Back;
+    Button checkout;
     ImageView oneAdd;
+    private int CP1 = 0;
     ImageView twoAdd;
+    private int CP2 = 0;
     ImageView threeAdd;
+    private int BHB = 0;
     ImageView fourAdd;
+    private int BLT = 0;
     ImageView fiveAdd;
+    private int NYSS = 0;
     ImageView sixAdd;
+    private int HB = 0;
 
 
     @Override
@@ -28,7 +34,7 @@ public class Menu extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main_menu);
 
-        Back = (Button) findViewById(R.id.mback);
+        checkout = (Button) findViewById(R.id.checkout);
         oneAdd = (ImageView) findViewById(R.id.imageView1);
         twoAdd = (ImageView) findViewById(R.id.imageView2);
         threeAdd = (ImageView) findViewById(R.id.imageView3);
@@ -36,80 +42,74 @@ public class Menu extends AppCompatActivity {
         fiveAdd = (ImageView) findViewById(R.id.imageView5);
         sixAdd = (ImageView) findViewById(R.id.imageView6);
 
-
-
-
-        Back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                Intent back = new Intent(Menu.this, Home.class);
-                startActivity(back);
-
-            }
-        });
-
-        //Intent for food quanity being added
-        Intent ordersplaced = new Intent(Menu.this, Menu.class);
-
+        //Saves data
+        Intent getQuantity = getIntent();
+        CP1 = getQuantity.getIntExtra("CP1", 0);
+        CP2 = getQuantity.getIntExtra("CP2", 0);
+        BHB = getQuantity.getIntExtra("BHB", 0);
+        BLT = getQuantity.getIntExtra("BLT", 0);
+        NYSS = getQuantity.getIntExtra("NYSS", 0);
+        HB = getQuantity.getIntExtra("HB", 0);
         //Food 1
         oneAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                ordersplaced.putExtra("CP1", 8);
-                startActivity(ordersplaced);
-
+                CP1++; //Quantity Multiplier
+                //ADD CHIME SOUND AS CLICK INDICATOR
             }
         });
         //Food 2
         twoAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                ordersplaced.putExtra("CP2", 10);
-                startActivity(ordersplaced);
-
-
+                CP2++; //Quantity Multiplier
             }
         });
         //Food 3
-//        threeAdd.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v){
-//                ordersplaced.putExtra("BHB", 8);
-//                startActivity(ordersplaced);
-//
-//
-//            }
-//        });
-//        //Food 4
-//        fourAdd.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v){
-//                ordersplaced.putExtra("BLT", 12);
-//                startActivity(ordersplaced);
-//
-//
-//            }
-//        });
-//        //Food 5
-//        fiveAdd.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v){
-//                ordersplaced.putExtra("NYSS", 18);
-//                startActivity(ordersplaced);
-//
-//
-//            }
-//        });
-//        //Food 6
-//        sixAdd.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v){
-//                ordersplaced.putExtra("HB", 20);
-//                startActivity(ordersplaced);
-//
-//
-//            }
-//        });
+        threeAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                BHB++; //Quantity Multiplier
+            }
+        });
+        //Food 4
+        fourAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                BLT++; //Quantity Multiplier
+            }
+        });
+        //Food 5
+        fiveAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                NYSS++; //Quantity Multiplier
+            }
+        });
+        //Food 6
+        sixAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                HB++; //Quantity Multiplier
+            }
+        });
 
+        //Checkout
+        checkout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent orderQuantity = new Intent(Menu.this, OrdersPlaced.class);
+                orderQuantity.putExtra("CP1", CP1);
+                orderQuantity.putExtra("CP2", CP2);
+                orderQuantity.putExtra("BHB", BHB);
+                orderQuantity.putExtra("BLT", BLT);
+                orderQuantity.putExtra("NYSS", NYSS);
+                orderQuantity.putExtra("HB", HB);
+                startActivity(orderQuantity);
+            }
+        });
+
+        //end of interactive
     }
+
 }

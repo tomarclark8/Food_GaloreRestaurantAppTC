@@ -10,12 +10,12 @@
 
 
     <Button
-        android:id="@+id/mback"
+        android:id="@+id/checkout"
         android:layout_width="wrap_content"
         android:layout_height="90sp"
-        android:text="BACK"
+        android:text="CHECKOUT"
         android:textSize="50sp"
-        android:translationX="120sp"
+        android:translationX="50sp"
         android:translationY="750sp" />
 
 

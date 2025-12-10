@@ -8,7 +8,7 @@ import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Reservation extends AppCompatActivity {
+public class Purchase extends AppCompatActivity {
 
     //this is the menu page
     Button Back;
@@ -16,14 +16,14 @@ public class Reservation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main_reservation);
+        setContentView(R.layout.activity_purchase);
 
-        Back = (Button) findViewById(R.id.rback);
+        Back = (Button) findViewById(R.id.Pback);
 
         Back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(Reservation.this, Home.class);
+                Intent intent = new Intent(Purchase.this, Home.class);
                 startActivity(intent);
 
             }

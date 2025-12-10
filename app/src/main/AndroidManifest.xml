@@ -18,7 +18,7 @@
             android:name=".Menu"
             android:exported="false" />
         <activity
-            android:name=".Reservation"
+            android:name=".Purchase"
             android:exported="false" />
         <activity
             android:name=".Home"

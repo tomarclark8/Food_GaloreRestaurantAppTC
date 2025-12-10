@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Home extends AppCompatActivity {
 
     //tThis is the home page
-    Button reserve;
+    Button orders;
     Button menu;
     Button Address;
 
@@ -22,7 +22,7 @@ public class Home extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
 
-        reserve = (Button) findViewById(R.id.Reserve);
+        orders = (Button) findViewById(R.id.OrdersPlaced);
         menu = (Button) findViewById(R.id.Menu);
         Address = (Button) findViewById(R.id.Address);
 
@@ -34,7 +34,6 @@ public class Home extends AppCompatActivity {
                 startActivity(mapIntent);
             }
         });
-
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
@@ -43,11 +42,10 @@ public class Home extends AppCompatActivity {
 
             }
         });
-
-        reserve.setOnClickListener(new View.OnClickListener() {
+        orders.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(Home.this, Reservation.class);
+                Intent intent = new Intent(Home.this, OrdersPlaced.class);
                 startActivity(intent);
 
             }
