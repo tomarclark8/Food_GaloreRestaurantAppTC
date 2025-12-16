@@ -73,13 +73,15 @@ public class Purchase extends AppCompatActivity {
         });
 
         //Show subtotal value
-        double roundedSubtotal = Math.round(subtotal *100.0) / 100.0;
+
         subtotal += (f1Value * CP1);
         subtotal += (f2Value * CP2);
         subtotal += (f3Value * BHB);
         subtotal += (f4Value * BLT);
         subtotal += (f5Value * NYSS);
         subtotal += (f6Value * HB);
+
+        double roundedSubtotal = Math.round(subtotal*100.00)/100.0 ;
         Subtotal.setText("Subtotal: $"+ roundedSubtotal);
 
         //Show total value
